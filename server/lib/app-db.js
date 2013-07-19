@@ -6,7 +6,8 @@ mongoose.connection.once('open', console.log.bind(console, 'successfully connect
 mongoose.connection.once('close', console.log.bind(console, 'successfully disconnected from MongoDB'));
 
 exports.connect = function connect() {
-  mongoose.connect(config.MongoDB.url);
+  var url = process.env.MONGOLAB_URI || config.MongoDB.url;
+  mongoose.connect(url);
 };
 
 exports.disconnect = function disconnect() {
