@@ -1,0 +1,28 @@
+{
+  "name": "test-scores",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --reporter spec  ./test --recursive",
+    "start": "DEBUG=app:* node app.js"
+  },
+  "dependencies": {
+    "express": "~>3",
+    "js-yaml": "2.x.x",
+    "config": "0.4.x",
+    "q": "*",
+    "re-map": "*",
+    "mongoose": "",
+    "string": "1.4.x",
+    "debug": "*"
+  },
+  "devDependencies": {
+    "nodemon": "~0.7.6",
+    "mocha": "~1.9.0",
+    "should": "~1.2.2"
+  },
+  "engines": {
+    "node": ">=0.8"
+  }
+}
