@@ -1,6 +1,6 @@
 App:
   domain: localhost
-  port: 80
+  port: 5000
 
 MongoDB:
   url: mongodb://localhost/test_scores
